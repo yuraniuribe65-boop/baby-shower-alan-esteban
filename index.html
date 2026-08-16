@@ -11,7 +11,7 @@ body{display:flex;justify-content:center;min-height:100vh}
 .invite{position:relative;width:min(100vw,1024px);line-height:0;overflow:hidden}
 .bg{display:block;width:100%;height:auto}
 .countdown{
- position:absolute;left:20.8%;top:65.15%;width:58.4%;
+ position:absolute;left:18%;top:59%;width:64%;
  display:grid;grid-template-columns:repeat(4,1fr);gap:2.2%;
  line-height:1;
 }
@@ -24,23 +24,90 @@ body{display:flex;justify-content:center;min-height:100vh}
 .num{font:36px Georgia,serif;color:#6c94ae;line-height:1}
 .lab{font:10px Arial,sans-serif;color:#7b6047;letter-spacing:1px;margin-top:7px;text-transform:uppercase}
 .parents{
- position:absolute;left:27%;top:88.9%;width:46%;
- text-align:center;line-height:1
+position:absolute;
+left:25%;
+top:88%;
+width:50%;
+text-align:center;
+line-height:1;
 }
+
 .parents .names{
- font-family:"Georgia",serif;font-style:italic;
- font-size:clamp(25px,4.1vw,44px);color:#6b91aa;
- white-space:nowrap
+font-family:"Georgia",serif;
+font-style:italic;
+font-size:clamp(25px,4.1vw,44px);
+color:#6b91aa;
+white-space:nowrap;
+}
+
+@media(max-width:600px){
+  .parents{
+    left:15%;
+    top:88%;
+    width:70%;
+  }
+
+  .parents .names{
+    font-size:27px;
+    white-space:nowrap;
+  }
 }
 .map{
- position:absolute;left:57.1%;top:82.95%;width:21.2%;height:3.25%;
- border-radius:22px;display:block
+position:absolute;
+left:57.1%;
+top:82.95%;
+width:21.2%;
+height:auto;
+border-radius:22px;
+display:block;
 }
-@media(max-width:600px){
- .box{height:58px;border-radius:12px}
- .num{font-size:24px}
- .lab{font-size:7px;margin-top:4px;letter-spacing:.6px}
- .parents .names{font-size:26px}
+@media (max-width: 600px) {
+
+  .invite {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .countdown {
+    left: 14%;
+    top: 61%;
+    width: 72%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2%;
+  }
+
+  .box {
+    height: 58px;
+    border-radius: 12px;
+  }
+
+  .num {
+    font-size: 23px;
+  }
+
+  .lab {
+    font-size: 7px;
+    margin-top: 3px;
+    letter-spacing: .4px;
+  }
+
+  .parents {
+    left: 20%;
+    top: 91%;
+    width: 60%;
+  }
+
+  .parents .names {
+    font-size: 24px;
+    white-space: nowrap;
+  }
+
+  .map {
+    left: 56%;
+    top: 82%;
+    width: 38%;
+    height: auto;
+  }
 }
 </style>
 </head>
