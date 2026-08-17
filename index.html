@@ -44,12 +44,55 @@ body{display:flex;justify-content:center;min-height:100vh}
  border-radius:25px;display:block;cursor:pointer;
 }
 @media (max-width: 600px) {
-
-  .invite {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
+  .invitation {
+    width: 100vw;
   }
+
+  /* CUENTA REGRESIVA */
+  .countdown {
+    left: 14% !important;
+    top: 68% !important;
+    width: 72% !important;
+    gap: 2% !important;
+  }
+
+  .count-box {
+    height: auto !important;
+    min-height: 52px;
+    border-radius: 10px;
+    padding: 4px 2px;
+  }
+
+  .num {
+    font-size: clamp(18px, 5vw, 24px) !important;
+  }
+
+  .lab {
+    font-size: clamp(6px, 1.8vw, 9px) !important;
+    margin-top: 2px !important;
+    letter-spacing: .2px !important;
+  }
+
+  /* BOTÓN / UBICACIÓN */
+  .location-link {
+    left: 56% !important;
+    top: 82% !important;
+    width: 39% !important;
+    height: 4.5% !important;
+  }
+
+  /* NOMBRES DE LOS PAPÁS */
+  .parents-name {
+    left: 18% !important;
+    top: 90.5% !important;
+    width: 64% !important;
+    height: 4.8% !important;
+  }
+
+  .parents-name span {
+    font-size: clamp(20px, 6vw, 30px) !important;
+  }
+}
 
   .bg {
     width: 100%;
