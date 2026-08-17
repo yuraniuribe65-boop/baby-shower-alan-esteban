@@ -14,7 +14,7 @@ body{display:flex;justify-content:center;min-height:100vh}
 
 /* Cuenta regresiva: sustituye los números impresos de la imagen y funciona en tiempo real. */
 .countdown{
- position:absolute;left:20.8%;top:64.15%;width:52.0%;height:8.25%;
+ position:absolute;left:20.8%;top:68%;width:52.0%;height:8.25%;
  display:grid;grid-template-columns:repeat(4,1fr);gap:3%;
 }
 .count-box{
@@ -43,10 +43,70 @@ body{display:flex;justify-content:center;min-height:100vh}
  position:absolute;left:57.2%;top:83.15%;width:21.5%;height:3.8%;
  border-radius:25px;display:block;cursor:pointer;
 }
-@media(max-width:600px){
- .num{font-size:23px}
- .lab{font-size:7px;margin-top:5px}
- .parents-name span{font-size:clamp(24px,6vw,36px)}
+@media (max-width: 600px) {
+
+  .invite {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .bg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* CUENTA REGRESIVA */
+  .countdown {
+    position: absolute;
+    left: 14%;
+    top: 68%;
+    width: 72%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2%;
+  }
+
+  .box {
+    height: 58px;
+    border-radius: 12px;
+  }
+
+  .num {
+    font-size: 23px;
+  }
+
+  .lab {
+    font-size: 7px;
+    margin-top: 3px;
+    letter-spacing: .4px;
+  }
+
+  /* MAPA */
+  .map {
+    position: absolute;
+    left: 57%;
+    top: 82%;
+    width: 38%;
+    height: auto;
+    border-radius: 18px;
+    display: block;
+  }
+
+  /* NOMBRES DE LOS PAPÁS */
+  .parents {
+    position: absolute;
+    left: 20%;
+    top: 91%;
+    width: 60%;
+    text-align: center;
+  }
+
+  .parents .names {
+    font-size: 24px;
+    white-space: nowrap;
+  }
 }
 </style>
 </head>
